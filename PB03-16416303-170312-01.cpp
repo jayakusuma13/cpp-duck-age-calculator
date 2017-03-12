@@ -1,20 +1,12 @@
-// NIM/Nama : 16416303 / M. Qodir Ibrahim Jayakusuma
-// Nama file : PB03-16416303-170312-01.cpp
-// Tanggal : 12-03-2017
-// Deskripsi : program penghitung golden age
-
-
 #include <iostream>
 using namespace std;
 
-    //deklarasi variabel
     typedef struct {
         int hari, bulan, tahun;
     }tanggal;
     tanggal lahir;
     tanggal sekarang;
 
-    //deklarasi fungsi
     int umur(tanggal lahir, tanggal sekarang){
         int x,y,a,b,c;
 
@@ -35,7 +27,6 @@ using namespace std;
 int main(){
     int x, i;
 
-    //input
     cout << "masukkan tanggal : ";
     cin >> sekarang.hari;
     cout << "masukkan bulan : ";
@@ -44,8 +35,7 @@ int main(){
     cin >> sekarang.tahun;
     cout << "masukkan jumlah bebek :";
     cin >> x;
-
-    //looping bebek
+    
     for(i=1;i<=x;i++){
         cout << "Masukan tanggal lahir bebek " << i << " : ";
         cin >> lahir.hari;
@@ -54,7 +44,6 @@ int main(){
         cout << "Masukan tahun lahir bebek " << i << " : ";
         cin >> lahir.tahun;
 
-        //penggunaan fungsi
         umur(lahir, sekarang);
     };
 
